@@ -2,7 +2,6 @@ const request = require("request");
 const expect = require("chai").expect;
 const endpoint = "http://www.mocky.io/v2/5dd94b3232000057009a8757/";
 
-
 describe('Test 1: Status 200', function() {
     it('Status 200', function(done) {
         request.get({ url: endpoint},
