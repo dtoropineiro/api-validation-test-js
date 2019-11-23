@@ -15,14 +15,14 @@ Para deleteEmployee se agregó a la TestSuite las siguietes assertions:
 ```
 -Validar status 202
 ```
-<br>
+
 Para addEmployee se agregó a la TestSuite las siguietes assertions:
 <br>
 ```
 -Validar status 200
 -Validar contenido de 'departamento' en el response
 ```
-<br>
+
 Se podrían agregar las siguientes validaciones
 <br>
 ```
