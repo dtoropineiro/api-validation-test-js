@@ -1,6 +1,5 @@
 # spring-rest-js-mocha
-# Integración de microservicio realizado en springboot que consume y produce el json de cliente y sus datos,
-# y el proyecto javascript+mocha que valida esta API
+# Integración de microservicio realizado en springboot que consume y produce el json de cliente y sus datos, y el proyecto javascript+mocha que valida esta API
 
 1) Levantar microservicio springboot con el siguiente comando, asegurarse que el puerto 8080 esté libre
 <br>
