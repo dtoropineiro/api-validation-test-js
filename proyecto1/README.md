@@ -10,15 +10,12 @@
 
 2) Instalar dependencias con 
 <br>
-```
 npm install
-```
 
 3) Correr test con el siguiente comando
 <br>
-```
 mocha test
-```
+
 
 
 
