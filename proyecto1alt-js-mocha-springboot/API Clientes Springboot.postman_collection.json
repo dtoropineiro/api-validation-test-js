@@ -1,0 +1,124 @@
+{
+	"id": "296baefb-464a-046b-3238-e4f8621e8b28",
+	"name": "API Clientes Springboot",
+	"description": "",
+	"order": [
+		"d870200f-a48a-815b-14de-3322d9dc40c6",
+		"9a91149a-eae8-81d8-a70b-ff0cf09685a8"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1574528540021,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "9a91149a-eae8-81d8-a70b-ff0cf09685a8",
+			"headers": "Accept: application/json\n//id: 1\n//name: \"pepito\"\n//dept: \"asdf\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "id",
+					"value": "1",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "name",
+					"value": "\"pepito\"",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "dept",
+					"value": "\"asdf\"",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/cliente/addCliente",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1574528572473,
+			"name": "Add Cliente",
+			"description": "",
+			"collectionId": "296baefb-464a-046b-3238-e4f8621e8b28",
+			"responses": [],
+			"rawModeData": "{\r\n    \"Dato_cliente\": {\r\n        \"Nombre\": \"Pepito\",\r\n        \"Apellido\": \"Torres\",\r\n        \"Direccion\": \"calle falsa 1\",\r\n        \"Email\": \"pepito@pepitomail.com\",\r\n        \"Telefono\": 123123,\r\n        \"RUT\": 1231232\r\n    },\r\n    \"Dato_perfil\": {\r\n        \"Cuenta_ppal\": 123,\r\n        \"Tipo_cliente\": \"vip\",\r\n        \"Tarjeta_debito\": 123\r\n    },\r\n    \"Dato_Sucursal\": {\r\n        \"Sucursal_nro\": 214,\r\n        \"Ejecutivo\": \"pepo\",\r\n        \"Telefono_ejec\": 423423,\r\n        \"Direccion_suc\": \"calle falsa 2\"\r\n    },\r\n    \"Dato_productos\": {\r\n        \"Tiene_prod\": true,\r\n        \"Tipo_producto\": [\r\n            \"Consumo\",\r\n            \"Hipotecario\",\r\n            \"Linea_emergencia\",\r\n            \"Linea_sobregiro\"\r\n            ],\r\n        \"Puntos\": 1124,\r\n        \"Tarjeta_credito\": 1111222233334444\r\n    },\r\n    \"Datos_seguros\": {\r\n        \"Tiene_prod\": true,\r\n        \"SOAP\": \"string\",\r\n        \"Seguro_vehiculo\": \"string\",\r\n        \"Seguro_fraude\": \"string\",\r\n        \"Seguro_hogar\": \"string\",\r\n        \"Seguro_vida\": \"string\"\r\n    },\r\n    \"Datos_fondos\": {\r\n        \"Fondo_mutual\": \"string\",\r\n        \"Ahorro_previsional\": 412,\r\n        \"ctaRentaDiaria\": \"string\"\r\n    },\r\n    \"Datos_penalizaciones\": {\r\n        \"InteresesMora_Sobregiro\": 314,\r\n        \"InteresMora_TarjetaCredito\": 132,\r\n        \"InteresMora_Consumo\": 123,\r\n        \"InteresMora_Hipotecario\": 123\r\n    }\r\n}"
+		},
+		{
+			"id": "d870200f-a48a-815b-14de-3322d9dc40c6",
+			"headers": "Accept: application/json\n//id: 1\n//name: \"pepito\"\n//dept: \"asdf\"\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "id",
+					"value": "1",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "name",
+					"value": "\"pepito\"",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "dept",
+					"value": "\"asdf\"",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/cliente/getClientes",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1574528571421,
+			"name": "Get Cliente",
+			"description": "",
+			"collectionId": "296baefb-464a-046b-3238-e4f8621e8b28",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\":\"pepito\",\n\t\"dept\":\"asdf\"\n}"
+		}
+	]
+}
