@@ -1,0 +1,52 @@
+{
+    "Dato_cliente": {
+        "Nombre": "Pepito",
+        "Apellido": "Torres",
+        "Direccion": "calle falsa 1",
+        "Email": "pepito@pepitomail.com",
+        "Telefono": 123123,
+        "RUT": 1231232
+    },
+    "Dato_perfil": {
+        "Cuenta_ppal": 123,
+        "Tipo_cliente": "vip",
+        "Tarjeta_debito": 123
+    },
+    "Dato_Sucursal": {
+        "Sucursal_nro": 214,
+        "Ejecutivo": "pepo",
+        "Telefono_ejec": 423423,
+        "Direccion_suc": "calle falsa 2"
+    },
+    "Dato_productos": {
+        "Tiene_prod": true,
+        "Tipo_producto": [
+            "Consumo",
+            "Hipotecario",
+            "Linea_emergencia",
+            "Linea_sobregiro"
+            ],
+        "Puntos": 1124,
+        "Tarjeta_credito": 1111222233334444
+    },
+    "Datos_seguros": {
+        "Tiene_prod": true,
+        "SOAP": "string",
+        "Seguro_vehiculo": "string",
+        "Seguro_fraude": "string",
+        "Seguro_hogar": "string",
+        "Seguro_vida": "string"
+    },
+    "Datos_fondos": {
+        "Fondo_mutual": "string",
+        "Ahorro_previsional": 412,
+        "ctaRentaDiaria": "string"
+    },
+    "Datos_penalizaciones": {
+        "InteresesMora_Sobregiro": 314,
+        "InteresMora_TarjetaCredito": 132,
+        "InteresMora_Consumo": 123,
+        "InteresMora_Hipotecario": 123
+    }
+    }
+    
