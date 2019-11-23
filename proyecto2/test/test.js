@@ -1,12 +1,6 @@
-const should = require("should");
 const request = require("request");
 const expect = require("chai").expect;
 const baseUrl = "https://restcountries.eu/rest/v2";
-const util = require("util");
-var chai = require('chai');
-chai.use(require('chai-json-schema'));
-
-
 
 describe('Test 1: Status 200', function() {
     it('Status 200', function(done) {

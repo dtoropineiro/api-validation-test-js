@@ -1,11 +1,6 @@
-const should = require("should");
 const request = require("request");
 const expect = require("chai").expect;
 const endpoint = "http://localhost:8080/cliente/getClientes";
-const util = require("util");
-
-
-
 
 describe('Test 1: Status 200', function() {
     it('Status 200', function(done) {

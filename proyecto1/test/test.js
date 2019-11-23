@@ -1,10 +1,6 @@
-const should = require("should");
 const request = require("request");
 const expect = require("chai").expect;
 const endpoint = "http://www.mocky.io/v2/5dd94b3232000057009a8757/";
-const util = require("util");
-
-
 
 
 describe('Test 1: Status 200', function() {
