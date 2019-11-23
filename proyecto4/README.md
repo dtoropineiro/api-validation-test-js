@@ -9,7 +9,7 @@ Para addEmployee se agregó a la TestSuite las siguietes assertions:
 -Validar que empleado aún no exista
 -Validar status 200
 ```
-<br>
+
 Para deleteEmployee se agregó a la TestSuite las siguietes assertions:
 <br>
 ```
