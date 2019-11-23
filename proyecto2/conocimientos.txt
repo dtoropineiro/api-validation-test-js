@@ -1,0 +1,22 @@
+1.	Pruebas de Contrato
+
+- Tests para comprobar la comuniación con una API
+
+2.	API Rest.
+
+- Una aplicación que sirve para comunicar información entre distintas plataformas, ambientes y software
+
+3.	Integracion Continua.
+
+Integración automatizada de un proyecto a un servidor, puede detectar fallos y errores de construcción del proyecto.
+En mi caso he tenido experiencia con Jenkins.
+
+4.	Despliegue Continuo.
+
+Proceso automatizado del proyecto para su entrega, no debería haber intervención humana en el deploy a producció
+
+5.	Mencione algunas herramientas para realizar pruebas a API y Web Services.
+
+-Postman
+-Mocha
+-Mockito (con java)
