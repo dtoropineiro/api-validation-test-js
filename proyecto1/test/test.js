@@ -1,6 +1,6 @@
 const request = require("request");
 const expect = require("chai").expect;
-const endpoint = "http://www.mocky.io/v2/5dd94b3232000057009a8757/";
+const endpoint = "https://1debf0df-7183-4cba-b894-81e177e5ff53.mock.pstmn.io/cliente";
 
 describe('Test 1: Status 200', function() {
     it('Status 200', function(done) {
@@ -60,11 +60,7 @@ describe('Test 6: Estructura JSON', function() {
         request.get({ url: endpoint},
             function(error, response, body) {
                     const bodyObj = JSON.parse(body);
-                    var jsonData;
-                    for (var i = 0; i < bodyObj.length; i++) {
-                        jsonData = bodyObj[i];
-                    }
-                    expect(jsonData).to.be.jsonSchema;
+                    expect(bodyObj).to.be.jsonSchema;
                 done();
             });
     });

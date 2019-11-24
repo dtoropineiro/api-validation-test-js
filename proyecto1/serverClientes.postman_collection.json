@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "6b0db04d-c90c-44f1-b801-a30b2f554a3d",
+		"name": "serverClientes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cliente",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/cliente",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"cliente"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/cliente",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cliente"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"Dato_cliente\": {\n        \"Nombre\": \"Pepito\",\n        \"Apellido\": \"Torres\",\n        \"Direccion\": \"calle falsa 1\",\n        \"Email\": \"pepito@pepitomail.com\",\n        \"Telefono\": 123123,\n        \"RUT\": 1231232\n    },\n    \"Dato_perfil\": {\n        \"Cuenta_ppal\": 123,\n        \"Tipo_cliente\": \"vip\",\n        \"Tarjeta_debito\": 123\n    },\n    \"Dato_Sucursal\": {\n        \"Sucursal_nro\": 214,\n        \"Ejecutivo\": \"pepo\",\n        \"Telefono_ejec\": 423423,\n        \"Direccion_suc\": \"calle falsa 2\"\n    },\n    \"Dato_productos\": {\n        \"Tiene_prod\": true,\n        \"Tipo_producto\": [\n            \"Consumo\",\n            \"Hipotecario\",\n            \"Linea_emergencia\",\n            \"Linea_sobregiro\"\n            ],\n        \"Puntos\": 1124,\n        \"Tarjeta_credito\": 1111222233334444\n    },\n    \"Datos_seguros\": {\n        \"Tiene_prod\": true,\n        \"SOAP\": \"string\",\n        \"Seguro_vehiculo\": \"string\",\n        \"Seguro_fraude\": \"string\",\n        \"Seguro_hogar\": \"string\",\n        \"Seguro_vida\": \"string\"\n    },\n    \"Datos_fondos\": {\n        \"Fondo_mutual\": \"string\",\n        \"Ahorro_previsional\": 412,\n        \"ctaRentaDiaria\": \"string\"\n    },\n    \"Datos_penalizaciones\": {\n        \"InteresesMora_Sobregiro\": 314,\n        \"InteresMora_TarjetaCredito\": 132,\n        \"InteresMora_Consumo\": 123,\n        \"InteresMora_Hipotecario\": 123\n    }\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
