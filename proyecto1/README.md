@@ -3,8 +3,9 @@
 
 
 
-# Validaciones desde endpoint mockeado http://www.mocky.io/v2/5dd94b3232000057009a8757
+# Validaciones desde endpoint mockeado con postman https://1debf0df-7183-4cba-b894-81e177e5ff53.mock.pstmn.io/cliente
 
+Se agrega el collection del ambiente y endpoint de postman en el archivo serverClientes.postman_collection.json
 
 1) Desarrollado con node.js(http://nodejs.org/) y mocha para el test
 
