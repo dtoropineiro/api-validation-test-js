@@ -1,12 +1,43 @@
 {
 	"info": {
-		"_postman_id": "6b0db04d-c90c-44f1-b801-a30b2f554a3d",
+		"_postman_id": "ae0d9503-b691-4333-9c6d-0cd799a2d178",
 		"name": "serverClientes",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "cliente",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e3b9efb6-a1b7-4587-84d2-c5b740af219d",
+						"exec": [
+							"pm.test(\"Validar status 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Validar mensaje ok\", function () {\r",
+							"    pm.response.to.be.ok;\r",
+							"});\r",
+							"pm.test(\"Validar formato Json\", function () {\r",
+							"    pm.response.to.be.json;\r",
+							"});\r",
+							"pm.test(\"Validar estructura del Json\", function () {\r",
+							"    pm.response.to.be.jsonSchema;\r",
+							"});\r",
+							"pm.test(\"Validar que RUT sea number\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.Dato_cliente.RUT).to.be.a('number')\r",
+							"});\r",
+							"pm.test(\"Validar que Nombre sea string\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.Dato_cliente.Nombre).to.be.a('string')\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -18,9 +49,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{url}}/cliente",
+					"raw": "https://1debf0df-7183-4cba-b894-81e177e5ff53.mock.pstmn.io/cliente",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"1debf0df-7183-4cba-b894-81e177e5ff53",
+						"mock",
+						"pstmn",
+						"io"
 					],
 					"path": [
 						"cliente"
@@ -33,10 +68,6 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{url}}/cliente",
 							"host": [
@@ -48,8 +79,8 @@
 						}
 					},
 					"code": 200,
-					"_postman_previewlanguage": null,
-					"header": null,
+					"_postman_previewlanguage": "Text",
+					"header": [],
 					"cookie": [],
 					"body": "{\n    \"Dato_cliente\": {\n        \"Nombre\": \"Pepito\",\n        \"Apellido\": \"Torres\",\n        \"Direccion\": \"calle falsa 1\",\n        \"Email\": \"pepito@pepitomail.com\",\n        \"Telefono\": 123123,\n        \"RUT\": 1231232\n    },\n    \"Dato_perfil\": {\n        \"Cuenta_ppal\": 123,\n        \"Tipo_cliente\": \"vip\",\n        \"Tarjeta_debito\": 123\n    },\n    \"Dato_Sucursal\": {\n        \"Sucursal_nro\": 214,\n        \"Ejecutivo\": \"pepo\",\n        \"Telefono_ejec\": 423423,\n        \"Direccion_suc\": \"calle falsa 2\"\n    },\n    \"Dato_productos\": {\n        \"Tiene_prod\": true,\n        \"Tipo_producto\": [\n            \"Consumo\",\n            \"Hipotecario\",\n            \"Linea_emergencia\",\n            \"Linea_sobregiro\"\n            ],\n        \"Puntos\": 1124,\n        \"Tarjeta_credito\": 1111222233334444\n    },\n    \"Datos_seguros\": {\n        \"Tiene_prod\": true,\n        \"SOAP\": \"string\",\n        \"Seguro_vehiculo\": \"string\",\n        \"Seguro_fraude\": \"string\",\n        \"Seguro_hogar\": \"string\",\n        \"Seguro_vida\": \"string\"\n    },\n    \"Datos_fondos\": {\n        \"Fondo_mutual\": \"string\",\n        \"Ahorro_previsional\": 412,\n        \"ctaRentaDiaria\": \"string\"\n    },\n    \"Datos_penalizaciones\": {\n        \"InteresesMora_Sobregiro\": 314,\n        \"InteresMora_TarjetaCredito\": 132,\n        \"InteresMora_Consumo\": 123,\n        \"InteresMora_Hipotecario\": 123\n    }\n}"
 				}

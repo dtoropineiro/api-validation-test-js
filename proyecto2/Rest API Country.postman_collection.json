@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "511953ba-3b27-48cf-9e12-28d0c011b303",
+		"name": "Rest API Country",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://restcountries.eu/rest/v2/name/chile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "de1e39a3-df15-43bf-b840-08bce6396655",
+						"exec": [
+							"pm.test(\"Validar status 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Validar mensaje ok\", function () {\r",
+							"    pm.response.to.be.ok;\r",
+							"});\r",
+							"pm.test(\"Validar formato Json\", function () {\r",
+							"    pm.response.to.be.json;\r",
+							"});\r",
+							"pm.test(\"Validar estructura del Json\", function () {\r",
+							"    pm.response.to.be.jsonSchema;\r",
+							"});\r",
+							"pm.test(\"Validar que population sea number\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    var jsonData2;\r",
+							"        for (var i = 0; i < jsonData.length; i++) {\r",
+							"            jsonData2 = jsonData[i];\r",
+							"        }\r",
+							"    pm.expect(jsonData2.population).to.be.a('number')\r",
+							"});\r",
+							"pm.test(\"Validar que name sea string\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    var jsonData2;\r",
+							"        for (var i = 0; i < jsonData.length; i++) {\r",
+							"            jsonData2 = jsonData[i];\r",
+							"        }\r",
+							"    pm.expect(jsonData2.name).to.be.a('string')\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/name/chile",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"name",
+						"chile"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
